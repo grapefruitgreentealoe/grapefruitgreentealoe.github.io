@@ -137,7 +137,8 @@ permalink: /en/
     <ul>
       <li><span class="bold">Lean Startup Program, Hanyang University Startup Support Group</span> — Certificate, Jul 2024 – Oct 2024</li>
       <li><span class="bold">AI Service Planning & Development Track, ELICE</span> — 2nd Cohort, Jun 2021 – Dec 2021 (Demo Day Excellence Award)</li>
-      <li><span class="bold">B.S. in Forest Life Science, Kookmin University</span> — Mar 2016 – Feb 2021</li>
+      <li><span class="bold">B.S. in Forest Life Science, Kookmin University</span> — Mar 2016 – Feb 2021<br/>
+GPA: 3.29 / 4.5</li>
     </ul>
   </div>
   <div class="resume-right">
