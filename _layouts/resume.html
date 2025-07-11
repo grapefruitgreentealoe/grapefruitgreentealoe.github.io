@@ -43,9 +43,6 @@
       .content {
         width: 100%;
       }
-      section {
-        margin-bottom: 24px;
-      }
       section h2 {
         font-size: 18px;
         margin-bottom: 12px;
@@ -126,13 +123,210 @@
           margin-right: 100px;
         }
       }
+
+      /* --- Language Switcher Styles --- */
+      .lang-switch {
+        display: flex;
+        gap: 12px;
+        justify-content: flex-end;
+        align-items: center;
+        margin: 16px 0 12px 0;
+      }
+      .lang-btn {
+        padding: 6px 18px;
+        border-radius: 20px;
+        border: 1.5px solid #0074d9;
+        background: #fff;
+        color: #0074d9;
+        font-weight: bold;
+        font-size: 1.05em;
+        cursor: pointer;
+        transition: background 0.2s, color 0.2s;
+        text-decoration: none;
+      }
+      .lang-btn.selected, .lang-btn:hover {
+        background: #0074d9;
+        color: #fff;
+      }
+
+      /* --- Minimap (Korean version only) --- */
+      {% if page.url == '/' %}
+      .section-map {
+        position: fixed;
+        top: 80px;
+        right: 32px;
+        background-color: rgba(255, 255, 255, 0.9);
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 10px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        z-index: 1000;
+        cursor: move;
+        user-select: none;
+      }
+      .section-map nav a {
+        display: block;
+        padding: 8px 12px;
+        font-size: 14px;
+        color: #333;
+        border-radius: 4px;
+        margin-bottom: 4px;
+        transition: background-color 0.3s, color 0.3s;
+        white-space: nowrap;
+      }
+      .section-map nav a:last-child {
+        margin-bottom: 0;
+      }
+      .section-map nav a:hover {
+        background-color: #f0f0f0;
+        text-decoration: none;
+      }
+      .section-map nav a.active {
+        background-color: #0074d9;
+        color: #fff;
+        font-weight: bold;
+      }
+      .content section {
+        padding-top: 80px;
+        margin-top: -80px;
+        margin-bottom: 50px;
+        /* min-height: 200px; */
+      }
+      .content section:last-of-type {
+        margin-bottom: 50%;
+      }
+      {% endif %}
     </style>
   </head>
   <body>
     <div class="lang-switch">
-      <a href="/" class="lang-btn {% if page.url == '/' or page.url contains '/index.html' %}selected{% endif %}">한국어</a>
-      <a href="/en/" class="lang-btn {% if page.url contains '/en/' %}selected{% endif %}">English</a>
+      <a
+        href="/"
+        class="lang-btn {% if page.url == '/' or page.url contains '/index.html' %}selected{% endif %}"
+        >한국어</a
+      >
+      <a
+        href="/en/"
+        class="lang-btn {% if page.url contains '/en/' %}selected{% endif %}"
+        >English</a
+      >
     </div>
-    {{ content }}
+
+    {{ content }} {% if page.url == '/' %}
+    <div class="section-map" id="section-map">
+      <nav id="section-map-nav"></nav>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const sectionMap = document.getElementById("section-map");
+        const sectionNav = document.getElementById("section-map-nav");
+        const sections = document.querySelectorAll(".content section");
+        const topOffset = 100; // 스크롤 도착지점의 상단 여백
+
+        if (!sectionMap || !sections.length) return;
+
+        // --- 1. 동적 메뉴 생성 ---
+        sections.forEach((section, index) => {
+          const title = section.querySelector("h2");
+          if (title) {
+            const link = document.createElement("a");
+            link.href = `#${section.id}`;
+            link.textContent = title.textContent;
+            if (index === 0) link.classList.add("active");
+            sectionNav.appendChild(link);
+          }
+        });
+
+        const mapLinks = sectionNav.querySelectorAll("a");
+
+        // --- 2. 드래그 기능 ---
+        let isDragging = false;
+        let offsetX, offsetY;
+        sectionMap.addEventListener("mousedown", (e) => {
+          if (e.target.tagName === "A") return;
+          isDragging = true;
+          sectionMap.style.transition = "none";
+          offsetX = e.clientX - sectionMap.getBoundingClientRect().left;
+          offsetY = e.clientY - sectionMap.getBoundingClientRect().top;
+        });
+        document.addEventListener("mousemove", (e) => {
+          if (!isDragging) return;
+          let newX = e.clientX - offsetX;
+          let newY = e.clientY - offsetY;
+          const mapWidth = sectionMap.offsetWidth;
+          const mapHeight = sectionMap.offsetHeight;
+          const viewWidth = window.innerWidth;
+          const viewHeight = window.innerHeight;
+          newX = Math.max(0, Math.min(newX, viewWidth - mapWidth));
+          newY = Math.max(0, Math.min(newY, viewHeight - mapHeight));
+          sectionMap.style.left = `${newX}px`;
+          sectionMap.style.top = `${newY}px`;
+          sectionMap.style.right = "auto";
+        });
+        document.addEventListener("mouseup", () => {
+          isDragging = false;
+        });
+
+        // --- 3. 클릭 우선 처리 및 부드러운 스크롤 ---
+        let isClickScrolling = false;
+        let scrollTimeout;
+
+        mapLinks.forEach((link) => {
+          link.addEventListener("click", (e) => {
+            e.preventDefault();
+            isClickScrolling = true;
+
+            // 즉시 active 클래스 변경
+            mapLinks.forEach((l) => l.classList.remove("active"));
+            e.currentTarget.classList.add("active");
+
+            const targetId = link.getAttribute("href");
+            const targetSection = document.querySelector(targetId);
+            if (targetSection) {
+              const targetPosition =
+                targetSection.getBoundingClientRect().top +
+                window.pageYOffset -
+                topOffset;
+              window.scrollTo({ top: targetPosition, behavior: "smooth" });
+
+              // 스크롤 중 Observer 비활성화
+              clearTimeout(scrollTimeout);
+              scrollTimeout = setTimeout(() => {
+                isClickScrolling = false;
+              }, 1000); // 1초 후 Observer 다시 활성화
+            }
+          });
+        });
+
+        // --- 4. 정밀한 Intersection Observer ---
+        const observerOptions = {
+          root: null,
+          rootMargin: `-${topOffset}px 0px -${
+            window.innerHeight - topOffset - 50
+          }px 0px`,
+          threshold: 0,
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+          if (isClickScrolling) return; // 클릭으로 스크롤 중이면 아무것도 안 함
+
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              const link = sectionNav.querySelector(
+                `a[href="#${entry.target.id}"]`
+              );
+              mapLinks.forEach((l) => l.classList.remove("active"));
+              if (link) {
+                link.classList.add("active");
+              }
+            }
+          });
+        }, observerOptions);
+
+        sections.forEach((section) => observer.observe(section));
+      });
+    </script>
+    {% endif %}
   </body>
 </html>

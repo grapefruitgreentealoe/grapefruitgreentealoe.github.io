@@ -4,32 +4,6 @@ title: "남궁은선 이력서"
 permalink: /
 ---
 
-<style>
-.lang-switch {
-  display: flex;
-  gap: 12px;
-  justify-content: flex-end;
-  align-items: center;
-  margin: 16px 0 12px 0;
-}
-.lang-btn {
-  padding: 6px 18px;
-  border-radius: 20px;
-  border: 1.5px solid #0074d9;
-  background: #fff;
-  color: #0074d9;
-  font-weight: bold;
-  font-size: 1.05em;
-  cursor: pointer;
-  transition: background 0.2s, color 0.2s;
-  text-decoration: none;
-}
-.lang-btn.selected, .lang-btn:hover {
-  background: #0074d9;
-  color: #fff;
-}
-</style>
-
 <div class="header">
     <div>
       <h1>남궁은선</h1>
@@ -44,7 +18,7 @@ permalink: /
 
 <div class="divider"></div>
 <div class="content">
-  <section>
+  <section id="about">
     <h2>자기소개</h2>
     <p>기능보다 구조를 먼저 고민하고, 팀의 생산성 향상에 기여하는 것을 중요하게 생각합니다.</p>
     <p>새로운 기술 도입이나 미지의 문제에 도전하며, 리더십과 팔로우십을 유연하게 오가며 팀의 목표 달성을 돕습니다.</p>
@@ -56,7 +30,7 @@ permalink: /
       <li>모의면접 스터디 운영. 매주 기술 세미나로 배운 내용 공유</li>
     </ul>
   </section>
-  <section>
+  <section id="strengths">
     <h2>핵심 강점</h2>
     <ul>
       <li>Epic-Story-Task 기반 협업 구조 도입 및 온보딩 주도</li>
@@ -65,14 +39,14 @@ permalink: /
       <li>1인 창업 및 실제 사용자 피드백 기반 제품 개선</li>
     </ul>
   </section>
-  <section>
+  <section id="skills">
     <h2>기술 스택</h2>
     <ul>
       <li><span class="bold">Frontend</span>: React, TypeScript, Vite, Next.js, Zustand, Jotai, React Query, Zod, Tailwind CSS, Shadcn UI, Storybook</li>
       <li><span class="bold">Infra</span>: AWS (EC2, S3, CloudFront, Nginx), GitHub Actions, Docker, GitLab Runner</li>
     </ul>
   </section>
-  <section>
+  <section id="experience">
     <h2>경력</h2>
     <div class="career-wrapper">
       <div class="career-grid">
@@ -167,7 +141,7 @@ permalink: /
       </div>
     </div>
   </section>
-  <section>
+  <section id="education">
     <h2>교육</h2>
     <ul>
       <li>한양대학교 창업지원단 린스타트업 2단계 수료 (2024.07 ~ 2024.10)</li>
