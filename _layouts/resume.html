@@ -153,7 +153,7 @@
       {% if page.url == '/' %}
       .section-map {
         position: fixed;
-        top: 80px;
+        bottom: 32px;
         right: 32px;
         background-color: rgba(255, 255, 255, 0.9);
         border: 1px solid #ddd;
@@ -194,6 +194,11 @@
       }
       .content section:last-of-type {
         margin-bottom: 50%;
+      }
+       @media (max-width: 768px) {
+        .section-map {
+          display: none; /* Show on mobile */
+        }
       }
       {% endif %}
     </style>
