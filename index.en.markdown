@@ -76,10 +76,6 @@ permalink: /en/
     <div><span class="bold">Blog:</span> <a href="https://velog.io/@grapefruitgreen" target="_blank">velog.io/@grapefruitgreen</a></div>
   </div>
 </div>
-<div class="lang-switch">
-  <a href="/" class="lang-btn">한국어</a>
-  <a href="/en/" class="lang-btn selected">English</a>
-</div>
 <div class="resume-container">
   <div class="resume-left">
     <div class="section-title">SUMMARY</div>

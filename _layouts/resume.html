@@ -129,6 +129,10 @@
     </style>
   </head>
   <body>
+    <div class="lang-switch">
+      <a href="/" class="lang-btn {% if page.url == '/' or page.url contains '/index.html' %}selected{% endif %}">한국어</a>
+      <a href="/en/" class="lang-btn {% if page.url contains '/en/' %}selected{% endif %}">English</a>
+    </div>
     {{ content }}
   </body>
 </html>
