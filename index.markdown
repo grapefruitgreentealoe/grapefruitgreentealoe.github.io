@@ -14,40 +14,42 @@ permalink: /
 
 <div class="header">
     <div>
-      <h1>남궁은선</h1>
-      <div class="subtitle">구조 중심 문제 해결과 빠른 릴리즈로 사용자 가치를 만드는 프론트엔드 엔지니어</div>
+      <h1>남궁은선 (Eunsun Namgung)</h1>
+      <div class="subtitle"><span class="bold">JavaScript와 React에 대한 깊은 이해</span>를 바탕으로, <span class="bold">구조 중심의 문제 해결 능력</span>과 빠른 릴리즈를 통해 사용자 가치를 만드는 <br/>프론트엔드 엔지니어</div>
     </div>
     <div class="header-right">
-      <div><span class="bold">GitHub:</span> <a href="https://github.com/grapefruitgreentealoe" target="_blank">@grapefruitgreentealoe</a></div>
-      <div><span class="bold">LinkedIn:</span> <a href="https://www.linkedin.com/in/eunsun-namgung-975391186/" target="_blank">https://www.linkedin.com/in/eunsun-namgung-975391186/</a></div>
-      <div><span class="bold">Blog:</span> <a href="https://velog.io/@grapefruitgreen" target="_blank">velog.io/@grapefruitgreen</a></div>
+      <div><span class="bold">Email:</span> nammugmuhg@gmail.com</div>
+      <div><span class="bold">Phone:</span> 010-3482-3750</div>
+      <div><span class="bold">생년월일:</span> 1997.12.07</div>
+      {% include social_icons.html %}
     </div>
 </div>
 
-<div class="divider"></div>
 <div class="content">
   <section id="about">
     <h2>자기소개</h2>
-    <p>코드 작성보다 구조를 먼저 고민하고, 팀의 생산성 향상에 기여하는 것을 중요하게 생각합니다.</p>
-    <p>새로운 기술 도입이나 미지의 문제에 도전하며, 리더십과 팔로우십을 유연하게 오가며 팀의 목표 달성을 돕습니다.</p>
+    <p><span class="bold">JavaScript와 React에 대한 깊은 이해</span>를 바탕으로, <span class="bold">구조 중심의 문제 해결</span>과 빠른 릴리즈를 통해 사용자 가치를 만드는 프론트엔드 엔지니어 남궁은선입니다.</p>
+    <p><span class="bold">웹 서비스의 성능 최적화</span>와 <span class="bold">더 나은 사용자 경험(UX)</span>을 위해 끊임없이 고민하며, 실제 <span class="bold">React/TypeScript 기반 서비스의 개발 및 릴리즈 경험</span>을 다수 보유하고 있습니다.</p>
   </section>
   <section id="strengths">
     <h2>핵심 강점</h2>
     <ul>
-      <li>Epic-Story-Task 기반 협업 구조 도입 및 온보딩 주도</li>
-      <li>CI/CD, 모노레포, 디자인 시스템 등 생산성/품질 향상 경험</li>
-      <li>1인 창업 및 실제 사용자 피드백 기반 제품 개선</li>
-      <li>다양한 스터디를 운영해왔으며, 기술 관련 정보를 학습하고 공유하는 것을 즐김</li>
-
+      <li><span class="bold">React/TypeScript 기반의 다수 사용자용 웹 서비스 개발 및 릴리즈 경험</span></li>
+      <li><span class="bold">웹 서비스 성능 최적화 경험</span>: API 호출 수 60% 감소, UX 체감 속도 2배 개선 등</li>
+      <li>CI/CD, 모노레포, 디자인 시스템 도입을 통한 개발 생산성 및 품질 향상 경험</li>
+      <li>PHP 레거시 코드를 <span class="bold">React 기반의 모던 웹 애플리케이션</span>으로 리빌드하고, MF(Micro-Frontend) 아키텍처를 도입하여 개발 생산성을 향상시킨 경험</li>
+      <li><span class="bold">Unit, E2E 테스트 시나리오 수립 및 자동화 경험</span></li>
     </ul>
-
   </section>
   <section id="skills">
     <h2>기술 스택</h2>
     <ul>
-      <li><span class="bold">Frontend</span>: React, TypeScript, Vite, Next.js, Zustand, Jotai, React Query, Zod, Tailwind CSS, Shadcn UI, Storybook</li>
+      <li><span class="bold">Frontend</span>: <span class="bold">React, TypeScript</span>, Vite, <span class="bold">Next.js</span>, Zustand, Jotai, React Query, Zod, Tailwind CSS, Shadcn UI, Storybook</li>
       <li><span class="bold">Infra</span>: AWS (EC2, S3, CloudFront, Nginx), GitHub Actions, Docker, GitLab Runner</li>
+      <li><span class="bold">Testing</span>: <span class="bold">Cypress, Vitest, React Testing Library</span></li>
+
     </ul>
+
   </section>
   <section id="experience">
     <h2>경력</h2>
@@ -56,7 +58,7 @@ permalink: /
         <div>
           <div class="company">엘리스 프론트엔드 파트너</div>
           <span class="period">2025.4.07 ~ 2025.4.30</span>
-          <p>프론트엔드, 프로젝트 매니징</p>
+          <p>프론트엔드, 프로젝트 매니징 (단기 파트너)</p>
           <p>
             <a href="https://tropical-quartz-3cb.notion.site/MediNow-1d71311db28780a988e0c36e17b32929" target="_blank">MediNow 포트폴리오</a>
           </p>
@@ -65,7 +67,7 @@ permalink: /
           </p>
         </div>
         <div>
-          <p><span class="role">실무적인 감각을 팀원들에게 부여하고, 서비스 개발 과정에서 필요한 협업 및 CI/CD 체계 구축. 이를 통해 최종 우승팀으로 이끄는데 기여.</span></p>
+          <p><span class="role">React/TypeScript 기반 서비스의 기술 리딩 및 멘토링. CI/CD 파이프라인 구축, 성능 최적화를 통해 <span class="underline">배포 시간을 40% 단축</span>하고  <br/><span class="underline">API 호출을 60% 감소</span>시키는 등 서비스 안정성과 사용자 경험을 크게 개선했습니다.</span></p>
           <ul>
             <li>Epic-Story-Task 기반 협업 구조 도입, 온보딩 주도</li>
             <li>Turborepo + Docker 기반 모노레포 환경 구성</li>
@@ -81,6 +83,7 @@ permalink: /
           <div class="company">1인 창업 - DIY KITTEN</div>
           <span class="period">2024.07 ~ 2024.12</span>
           <p>프론트엔드, 사업 기획, 프로젝트 매니징</p>
+          <p class="reason-for-leaving">이직 사유: 사업 규모 수립 실패, 팀원 모집 실패, 자금부족</p>
           <p>
             <a href="https://tropical-quartz-3cb.notion.site/DIY-KITTEN-1d91311db28780bebd1eca87c03adfb4" target="_blank">DIY KITTEN 포트폴리오</a>
           </p>
@@ -101,7 +104,8 @@ permalink: /
             <div>아임웹</div>
           </div>
           <span class="period">2022.06 ~ 2024.03</span>
-          <p>프론트엔드</p>
+          <p>프론트엔드 (정규직)</p>
+          <p class="reason-for-leaving">이직 사유: 자기개발 및 창업 준비 도전</p>
           <p><a href="https://tropical-quartz-3cb.notion.site/1d81311db28780558f41d3fc1afbaa9b" target="_blank">아임웹 포트폴리오</a></p>
         </div>
         <div class="projects-wrapper">
@@ -121,7 +125,7 @@ permalink: /
           <div>
             <p>
               <span class="bold">Integration Squad</span> 
-              <span class="role">PHP → React 리빌드 및 MF 모노레포 환경구축</span>
+              <span class="role">PHP로 작성된 레거시 코드를 <span class="bold">React 기반의 모던 웹 애플리케이션으로 성공적으로 리빌드</span>하고, MF(Micro-Frontend) 모노레포 환경을 구축하여  <br/>개발 생산성을 향상시켰습니다.</span>
               <span class="period">2023.12 ~ 2024.03</span>                        
             </p>
             <ul>
@@ -180,8 +184,10 @@ permalink: /
     <h2>기술적 능력</h2>
     <div class="skills-grid">
         <div class="skill-item">
-            <p class="bold">Typescript</p>
-            <p>타입스크립트에 대한 실무 경험이 있으며, 타입 정의와 Pick과 같은 유틸리티 타입을 효과적으로 활용할 수 있습니다.</p>
+            <p class="bold">Javascript</p>
+            <p>실무 경험을 바탕으로 동작 원리(클로저, 호이스팅 등)를 설명할 수 있습니다.</p>
+            <p> ES6 이후 최신 문법에 익숙하며 적극적으로 사용합니다.</p>
+            <p>VanillaJS를 이용해 DOM조작, 이벤트 처리를 할 수 있습니다.</p>
         </div>
         <div class="skill-item">
             <p class="bold">React</p>
@@ -190,14 +196,14 @@ permalink: /
             <p> custom hook을 만들고, 최적화할 수 있습니다.</p>
         </div>
         <div class="skill-item">
-            <p class="bold">Javascript</p>
-            <p>실무 경험을 바탕으로 동작 원리(클로저, 호이스팅 등)를 설명할 수 있습니다.</p>
-            <p> ES6 이후 최신 문법에 익숙하며 적극적으로 사용합니다.</p>
-            <p>VanillaJS를 이용해 DOM조작, 이벤트 처리를 할 수 있습니다.</p>
+            <p class="bold">Typescript</p>
+            <p>타입스크립트에 대한 실무 경험이 있으며, 타입 정의와 Pick과 같은 유틸리티 타입을 효과적으로 활용할 수 있습니다.</p>
         </div>
         <div class="skill-item">
-            <p class="bold">CSS</p>
-            <p>Tailwind CSS, Emotion</p>
+            <p class="bold">Testing</p>
+          
+            <p>Vitest와 React Testing Library를 활용하여 컴포넌트의 기능적 정확성을 보장하는 단위 테스트를 작성합니다.</p>
+            <p>Cypress를 사용하여 실제 사용자 시나리오 기반의 E2E 테스트를 자동화합니다.</p>
         </div>
         <div class="skill-item">
             <p class="bold">Next.js</p>
@@ -208,11 +214,24 @@ permalink: /
             <p>Tanstack-query, Zustand<br/>서버 상태와 클라이언트 상태를 효율적으로 관리할 수 있습니다.</p>
         </div>
         <div class="skill-item">
+            <p class="bold">CSS</p>
+            <p>Tailwind CSS, Emotion</p>
+        </div>
+        <div class="skill-item">
             <p class="bold">HTML</p>
             <p>접근성을 고려한 시멘틱 HTML 마크업 개발이 가능합니다. (header, nav, main, section, article, aside, footer 등) 활용</p>
         </div>
     </div>
   </section>
+  <section id="additional-info">
+    <h2>기타 정보</h2>
+    <ul>
+      <li><strong>외국어 능력 및 해외 경험:</strong> TOEIC 875점  (2020. 10. 취득 / 만료)</li>
+      <li><strong>해외 국적자:</strong> 해당 없음</li>
+      <li><strong>경력 공백기:</strong> 2024.03 ~ 2024.07 창업준비 도전 및 자기계발</li>
+    </ul>
+  </section>
+
   <section id="education">
     <h2>교육</h2>
     <ul>
