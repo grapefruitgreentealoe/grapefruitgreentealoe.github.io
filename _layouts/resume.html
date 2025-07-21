@@ -5,155 +5,220 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{{ page.title | default: "남궁은선 이력서" }}</title>
     <style>
+      /* Basic setup */
       body {
-        font-family: "Noto Sans KR", sans-serif;
-        margin: 0;
-        padding: 40px;
+        font-family: "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
+        line-height: 1.7;
         color: #333;
-        margin-left: auto;
-        margin-right: auto;
-        max-width: 968px;
+        background-color: #fff;
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 50px 40px;
+        font-size: 14px;
       }
+
+      /* Print-specific styles */
+      @media print {
+        body {
+          padding: 0;
+          font-size: 10pt;
+          max-width: 100%;
+        }
+        h1 { font-size: 22pt !important; }
+        h2 { font-size: 15pt !important; margin-bottom: 15px !important; }
+        .header, .content { margin: 0 !important; }
+        .section-map, .version-switcher, .lang-switch, .reason-for-leaving {
+          display: none !important;
+        }
+        a {
+          text-decoration: none !important;
+        }
+
+        section {
+          padding-top: 0 !important;
+          margin-top: 0 !important;
+        }
+        .skill-item {
+            background-color: #fff !important;
+            border: 1px solid #ddd !important;
+        }
+      }
+
+      /* Header */
       .header {
         display: grid;
-        grid-template-columns: 3fr 1fr;
+        grid-template-columns: 1fr auto;
         align-items: start;
-        grid-gap: 20px;
+        gap: 40px;
+        margin-bottom: 20px;
       }
       h1 {
+        font-family: 'Georgia', 'Times New Roman', Times, serif;
         font-size: 36px;
-        margin: 0;
+        font-weight: 700;
+        margin: 0 0 8px 0;
+        letter-spacing: -0.5px;
       }
       .subtitle {
         font-size: 16px;
-        color: #666;
-        margin-top: 4px;
+        color: #555;
+        font-weight: 300;
       }
       .header-right {
-        font-size: 14px;
-        line-height: 1.6;
+        width: 100%;
+        align-content: end;
+        font-size: 13px;
+        line-height: 1.8;
+        text-align: right;
+        color: #444;
       }
       .header-right div {
-        margin-bottom: 8px;
+        margin-bottom: 4px;
       }
-      .divider {
-        border-top: 2px solid #ddd;
-        margin: 16px 0;
-      }
-      section h2 {
-        font-size: 18px;
-        margin-bottom: 12px;
-        position: relative;
-      }
-      section h2::after {
-        content: "";
-        position: absolute;
-        left: 0;
-        bottom: -4px;
-        width: 40px;
-        height: 2px;
-        background: #333;
-      }
-      p,
-      ul {
-        font-size: 14px;
-        line-height: 1.6;
-        margin: 0;
-      }
-      ul {
-        padding-left: 20px;
+
+      /* Social Links */
+      .social-links {
+        display: flex;
+        gap: 12px;
+        justify-content: flex-end;
         margin-top: 8px;
       }
-      .career-grid {
-        display: grid;
-        grid-template-columns: 1fr 3fr;
-        grid-gap: 8px 24px;
+      .social-links a {
+        color: #333;
+        transition: color 0.3s;
       }
-      .career-wrapper {
-        display: flex;
-        flex-direction: column;
-        gap: 30px;
+      .social-links a:hover {
+        color: #0056b3;
       }
-      .skills-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 20px;
+      .social-links svg {
+        width: 20px;
+        height: 20px;
       }
-      .skill-item {
-        padding: 15px;
-        border: 1px solid #eee;
-        border-radius: 8px;
+
+      /* Links */
+      a {
+        color: #0056b3;
+        text-decoration: none;
+        font-weight: 500;
       }
-      .projects-wrapper {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
+      a:hover {
+        text-decoration: underline;
+      }
+
+      /* Divider */
+      .divider {
+        border-top: 1px solid #ccc;
+        margin: 30px 0;
+      }
+
+      /* Content Sections */
+      .content section {
+        margin-bottom: 45px;
+      }
+      section h2 {
+        font-family: 'Georgia', 'Times New Roman', Times, serif;
+        font-size: 22px;
+        font-weight: 600;
+        margin-bottom: 25px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #ddd;
+      }
+      section h2::after {
+        content: none;
+      }
+
+      p, ul {
+        margin-bottom: 12px;
+      }
+      ul {
+        padding-left: 22px;
+        list-style-type: disc;
+      }
+      li {
+        margin-bottom: 8px;
+        padding-left: 4px;
+      }
+
+      /* Specific element styles */
+      .bold {
+        font-weight: 600;
+      }
+      .underline {
+        text-decoration: underline;
+        text-decoration-color: #ccc;
       }
       .company {
-        font-weight: bold;
-        font-size: 15px;
-      }
-      .role {
-        font-weight: bold;
+        font-weight: 700;
+        font-size: 17px;
       }
       .period {
         display: block;
         font-style: italic;
         color: #666;
         font-size: 13px;
-        margin-bottom: 8px;
-      }
-      .bold {
-        font-weight: bold;
-      }
-      .underline {
-        text-decoration: underline;
+        margin: 4px 0 12px 0;
       }
       .role {
         display: block;
-        color: #666;
-        font-size: 13px;
-        font-weight: bold;
+        font-weight: 600;
+        color: #333;
+        font-size: 15px;
+        margin-bottom: 8px;
       }
-      a {
-        color: #0366d6;
-        text-decoration: none;
-      }
-      a:hover {
-        text-decoration: underline;
-      }
-      @media (min-width: 968px) {
-        .content,
-        .header,
-        .divider {
-          margin-left: 100px;
-          margin-right: 100px;
-        }
+      .reason-for-leaving {
+        font-size: 12px;
+        font-style: italic;
+        color: #888;
+        margin-top: 8px;
       }
 
-      /* --- Language Switcher Styles --- */
-      .lang-switch {
+      /* Layout Grids */
+      .career-wrapper {
         display: flex;
-        gap: 12px;
-        justify-content: flex-end;
-        align-items: center;
-        margin: 16px 0 12px 0;
+        flex-direction: column;
+        gap: 35px;
       }
-      .lang-btn {
-        padding: 6px 18px;
-        border-radius: 20px;
-        border: 1.5px solid #0074d9;
-        background: #fff;
-        color: #0074d9;
-        font-weight: bold;
-        font-size: 1.05em;
-        cursor: pointer;
-        transition: background 0.2s, color 0.2s;
-        text-decoration: none;
+      .career-grid {
+        display: grid;
+        grid-template-columns: 200px 1fr;
+        gap: 16px 24px;
       }
-      .lang-btn.selected, .lang-btn:hover {
-        background: #0074d9;
-        color: #fff;
+      .projects-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+      }
+      .skills-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        gap: 16px;
+      }
+      .skill-item {
+        padding: 20px;
+        border: 1px solid #e9e9e9;
+        border-radius: 6px;
+        background-color: #fdfdfd;
+        transition: border-color 0.3s, box-shadow 0.3s;
+      }
+      .skill-item:hover {
+        border-color: #ccc;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      }
+      .skill-item p {
+        font-size: 14px;
+        margin: 0;
+      }
+      .skill-item .bold {
+        font-size: 15px;
+        font-weight: 600;
+        display: block;
+        margin-bottom: 8px;
+        color: #222;
+      }
+
+      /* Remove version switcher from view and print */
+      .version-switcher {
+        display: none;
       }
 
       /* --- Minimap (Korean version only) --- */
@@ -162,7 +227,7 @@
         position: fixed;
         bottom: 32px;
         right: 32px;
-        background-color: rgba(255, 255, 255, 0.9);
+        background-color: rgba(255, 255, 255, 0.95);
         border: 1px solid #ddd;
         border-radius: 8px;
         padding: 10px;
@@ -196,15 +261,13 @@
       .content section {
         padding-top: 80px;
         margin-top: -80px;
-        margin-bottom: 50px;
-        /* min-height: 200px; */
       }
       .content section:last-of-type {
         margin-bottom: 50%;
       }
-       @media (max-width: 768px) {
+       @media (max-width: 1200px) {
         .section-map {
-          display: none; /* Show on mobile */
+          display: none;
         }
       }
       {% endif %}
