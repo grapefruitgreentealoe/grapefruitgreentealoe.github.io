@@ -1,7 +1,7 @@
 ---
 layout: resume
 title: "남궁은선 이력서"
-permalink: /ridi
+permalink: /
 ---
 
 <!-- <div class="version-switcher">
@@ -15,7 +15,7 @@ permalink: /ridi
 <div class="header">
     <div>
       <h1>남궁은선 (Eunsun Namgung)</h1>
-      <div class="subtitle"><span class="bold">JavaScript와 React에 대한 깊은 이해</span>를 바탕으로, <span class="bold">구조 중심의 문제 해결 능력</span>과 빠른 릴리즈를 통해 사용자 가치를 만드는 <br/>프론트엔드 엔지니어</div>
+      <div class="subtitle"><span class="bold">JavaScript와 React에 대한 깊은 이해</span>를 바탕으로, <span class="bold">구조 중심의 문제 해결 능력</span>과 빠른 릴리즈를 통해 사용자 가치를 만드는 프론트엔드 엔지니어</div>
     </div>
     <div class="header-right">
       <div><span class="bold">Email:</span> nammugmuhg@gmail.com</div>
@@ -67,7 +67,7 @@ permalink: /ridi
           </p>
         </div>
         <div>
-          <p><span class="role">React/TypeScript 기반 서비스의 기술 리딩 및 멘토링. CI/CD 파이프라인 구축, 성능 최적화를 통해 <span class="underline">배포 시간을 40% 단축</span>하고  <br/><span class="underline">API 호출을 60% 감소</span>시키는 등 서비스 안정성과 사용자 경험을 크게 개선했습니다.</span></p>
+          <p><span class="role">React/TypeScript 기반 서비스의 기술 리딩 및 멘토링. CI/CD 파이프라인 구축, 성능 최적화를 통해 <span class="underline">배포 시간을 40% 단축</span>하고  <span class="underline">API 호출을 60% 감소</span>시키는 등 서비스 안정성과 사용자 경험을 크게 개선했습니다.</span></p>
           <ul>
             <li>Epic-Story-Task 기반 협업 구조 도입, 온보딩 주도</li>
             <li>Turborepo + Docker 기반 모노레포 환경 구성</li>
@@ -125,7 +125,7 @@ permalink: /ridi
           <div>
             <p>
               <span class="bold">Integration Squad</span> 
-              <span class="role">PHP로 작성된 레거시 코드를 <span class="bold">React 기반의 모던 웹 애플리케이션으로 성공적으로 리빌드</span>하고, MF(Micro-Frontend) 모노레포 환경을 구축하여  <br/>개발 생산성을 향상시켰습니다.</span>
+              <span class="role">PHP로 작성된 레거시 코드를 <span class="bold">React 기반의 모던 웹 애플리케이션으로 성공적으로 리빌드</span>하고, MF(Micro-Frontend) 모노레포 환경을 구축하여  개발 생산성을 향상시켰습니다.</span>
               <span class="period">2023.12 ~ 2024.03</span>                        
             </p>
             <ul>
@@ -201,7 +201,6 @@ permalink: /ridi
         </div>
         <div class="skill-item">
             <p class="bold">Testing</p>
-          
             <p>Vitest와 React Testing Library를 활용하여 컴포넌트의 기능적 정확성을 보장하는 단위 테스트를 작성합니다.</p>
             <p>Cypress를 사용하여 실제 사용자 시나리오 기반의 E2E 테스트를 자동화합니다.</p>
         </div>
