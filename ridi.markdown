@@ -1,21 +1,12 @@
 ---
 layout: resume
 title: "남궁은선 이력서"
-permalink: /
+permalink: /ridi
 ---
-
-<!-- <div class="version-switcher">
-  <span>이력서 버전:</span>
-  <a href="/">기본</a> |
-  <a href="/tech">기술 주도형</a> |
-  <a href="/service">서비스/제품 중심형</a> |
-  <a href="/culture">협업/조직 문화 중심형</a>
-</div> -->
 
 <div class="header">
     <div>
       <h1>남궁은선 (Eunsun Namgung)</h1>
-      <div class="subtitle"><span class="bold">JavaScript와 React에 대한 깊은 이해</span>를 바탕으로, <span class="bold">구조 중심의 문제 해결 능력</span>과 빠른 릴리즈를 통해 사용자 가치를 만드는 프론트엔드 엔지니어</div>
     </div>
     <div class="header-right">
       <div><span class="bold">Email:</span> nammugmuhg@gmail.com</div>
@@ -27,14 +18,16 @@ permalink: /
 
 <div class="content">
   <section id="about">
-    <h2>자기소개</h2>
-    <p><span class="bold">JavaScript와 React에 대한 깊은 이해</span>를 바탕으로, <span class="bold">구조 중심의 문제 해결</span>과 빠른 릴리즈를 통해 사용자 가치를 만드는 프론트엔드 엔지니어 남궁은선입니다.</p>
-    <p><span class="bold">웹 서비스의 성능 최적화</span>와 <span class="bold">더 나은 사용자 경험(UX)</span>을 위해 끊임없이 고민하며, 실제 <span class="bold">React/TypeScript 기반 서비스의 개발 및 릴리즈 경험</span>을 다수 보유하고 있습니다.</p>
+    <h2>자기소개</h2>     
+    <div class="subtitle">프론트엔드 개발자로서 
+노코드 웹빌더 및 커머스 플랫폼 서비스 개발 경험, 그리고 창업 아이템으로 맞춤형 수공예 시안 생성 서비스를 운영한 경험이 있습니다.<br/>
+더 좋은 고객 경험을 주기 위해 계속 배우고 실행에 옮깁니다. 지속적으로 학습하고, 지식을 사람들과 나누고 토론하는 것을 즐깁니다.
+  </div>
   </section>
   <section id="strengths">
     <h2>핵심 강점</h2>
     <ul>
-      <li><span class="bold">React/TypeScript 기반의 다수 사용자용 웹 서비스 개발 및 릴리즈 경험</span></li>
+      <li><span class="bold">React/TypeScript 기반의 웹 서비스 개발 및 릴리즈 경험</span></li>
       <li><span class="bold">웹 서비스 성능 최적화 경험</span>: API 호출 수 60% 감소, UX 체감 속도 2배 개선 등</li>
       <li>CI/CD, 모노레포, 디자인 시스템 도입을 통한 개발 생산성 및 품질 향상 경험</li>
       <li>PHP 레거시 코드를 <span class="bold">React 기반의 모던 웹 애플리케이션</span>으로 리빌드하고, MF(Micro-Frontend) 아키텍처를 도입하여 개발 생산성을 향상시킨 경험</li>
@@ -67,7 +60,7 @@ permalink: /
           </p>
         </div>
         <div>
-          <p><span class="role">React/TypeScript 기반 서비스의 기술 리딩 및 멘토링. CI/CD 파이프라인 구축, 성능 최적화를 통해 <span class="underline">배포 시간을 40% 단축</span>하고  <span class="underline">API 호출을 60% 감소</span>시키는 등 서비스 안정성과 사용자 경험을 크게 개선했습니다.</span></p>
+          <p><span class="role">React/TypeScript 기반 서비스의 팀장 담당. CI/CD 파이프라인 구축, 성능 최적화를 통해 <span class="underline">배포 시간을 40% 단축</span>하고  <span class="underline">API 호출을 60% 감소</span>시키는 등 서비스 안정성과 사용자 경험을 크게 개선했습니다.</span></p>
           <ul>
             <li>Epic-Story-Task 기반 협업 구조 도입, 온보딩 주도</li>
             <li>Turborepo + Docker 기반 모노레포 환경 구성</li>
@@ -120,6 +113,7 @@ permalink: /
               <li>주문 상세, 결제, 취소/반품/환불 기능을 시각적으로 직관적인 구조로 개편</li>
               <li><span class="">디자인 시스템</span> 도입하여 인터페이스 일관성 확보</li>
               <li>운영자가 전체 주문 흐름을 한눈에 파악하도록 개선</li>
+              <li>가상화 기술을 이용하여 </li>
             </ul>
           </div>
           <div>
