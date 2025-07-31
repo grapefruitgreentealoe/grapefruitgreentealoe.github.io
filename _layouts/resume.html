@@ -11,7 +11,7 @@
         line-height: 1.7;
         color: #333;
         background-color: #fff;
-        max-width: 940px;
+        max-width: calc(100% - 200px);
         margin: 0 auto;
         padding: 50px 40px;
         font-size: 14px;
@@ -21,6 +21,9 @@
       @media print {
         .section-map, .version-switcher, .lang-switch, .reason-for-leaving {
           display: none !important;
+        }
+        .next-page{
+          page-break-before: always;
         }
       }
 
@@ -240,8 +243,8 @@
         font-weight: bold;
       }
       .content section {
-        padding-top: 80px;
-        margin-top: -80px;
+        padding-top: 40px;
+        margin-top: -40px;
       }
       .content section:last-of-type {
         margin-bottom: 50%;
