@@ -31,7 +31,7 @@ permalink: /
       <li><strong>React/TypeScript 기반 웹 서비스 개발 및 릴리즈 경험</strong></li>
       <li><strong>웹 서비스 성능 최적화 경험</strong>: API 호출 수 <strong>60% 감소</strong>, UX 체감 속도 <strong>2배 개선</strong> 등 성능 향상 기여</li>
       <li>CI/CD, 모노레포, 디자인 시스템 도입을 통한 개발 생산성 및 품질 향상 경험</li>
-      <li>PHP 레거시 코드를 <strong>React 기반 모던 웹 애플리케이션으로 리빌드</strong>하고, MF(Micro-Frontend) 아키텍처를 도입하여 개발 생산성 향상 기반 마련</li>
+      <li>PHP 레거시 코드를 <strong>React 기반 모던 웹 애플리케이션으로 리빌드</strong>하고, MF(Micro-Frontend) 아키텍처를 도입하여 점진적 마이그레이션 경험</li>
     </ul>
   </section>
 
@@ -111,13 +111,14 @@ permalink: /
             </p>
             <ul>
               <li>
-                  <p>Tanstack-query의 <strong><code>useQuery</code>를 통한 데이터 조회 및 캐싱</strong>, 그리고 <strong><code>useMutation</code>을 활용한 비즈니스 로직과 UI 로직의 명확한 분리</strong>를 통해 코드의 가독성 및 유지보수성을 높였습니다.</p>
-                  <p>각 주문 옵션의 상태 변화를 실시간으로 반영하고, 필요한 데이터만을 요청하며 자주 쓰는 데이터는 저장하여 서버 부담을 줄였습니다.</p>
+                  효율적인 데이터 관리 및 서버 부하 감소:
+                  <br/>
+                  Tanstack Query의 useQuery를 활용하여 데이터를 효율적으로 조회하고 캐싱했습니다. 또한, useMutation을 통해 서버 데이터 변경 작업 시 옵티미스틱 업데이트를 적용하고 불필요한 재요청을 최소화하여, 각 주문 옵션의 상태 변화를 실시간으로 반영하면서도 불필요한 네트워크 호출을 줄이고 서버 부담을 경감했습니다.
               </li>
               <li>shadcn/ui를 기반으로 <strong>초기 디자인 시스템</strong>을 관리하고 사내 라이브러리로 도입하여 인터페이스 일관성 확보 및 개발 효율성 증대</li>
-              <li>가상화 기술(Virtualization)을 이용하여 대규모 상품 리스트 추가 모달에 적용, <strong>보이는 부분만 렌더링하게 하여 성능 및 사용자 반응성 향상</strong></li>
+              <li><strong>가상화 기술(Virtualization)</strong>인 react-virtualized을 이용하여 대규모 상품 리스트 추가 모달에 적용,보이는 부분만 렌더링하게 하여 성능 및 사용자 반응성 향상</li>
               <li>
-                <p><strong>Tanstack Query(`useQuery`)의 `enabled` 플래그를 통한 호출 중복 문제 해결</strong></p>
+              <strong>Tanstack Query(`useQuery`)의 `enabled` 플래그를 통한 호출 중복 문제 해결:</strong>
                 <p>주문 관리 기능은 서버 상태와의 <strong>즉각적인 동기화가 필수적</strong>이어서, `staleTime`을 짧게(혹은 0ms) 유지해야 했습니다. 이로 인해 여러 컴포넌트에서 동일한 주문 관련 데이터를 필요로 할 때, <strong>불필요한 자동 재호출로 인해 실제 네트워크 호출이 중복되는 문제</strong>가 발생했습니다.</p>
                 <p>이 문제를 해결하고 <strong>네트워크 호출 수를 줄여 서버 부하를 경감</strong>하기 위해 다음과 같이 Tanstack Query를 최적화했습니다:</p>
                 <ul>
@@ -130,7 +131,7 @@ permalink: /
           <div>
             <p>
               <span class="bold"><strong>Integration Squad</strong></span> 
-              <span class="role"><strong>PHP 레거시 코드를 React 기반의 모던 웹 애플리케이션으로 성공적으로 리빌드하고, MF(Micro-Frontend) 모노레포 환경을 구축하여 개발 생산성 및 사용자 경험 향상 기반 마련</strong></span>
+              <span class="role"><strong>PHP 레거시 코드를 React 기반의 모던 웹 애플리케이션으로 리빌드, MF(Micro-Frontend) 모노레포 환경을 구축하여 점진적 마이그레이션 경험</strong></span>
               <span class="period">2023.12 ~ 2024.03</span>                        
             </p>
             <ul>
