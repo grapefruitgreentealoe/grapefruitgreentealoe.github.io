@@ -158,40 +158,69 @@ permalink: /
     </div>
   </section>
 
-  <section id="activities" class="next-page">
+  <section id="activities">
     <h2><strong>기타 활동</strong></h2>
     <div class="career-wrapper">
-      <div class="">
+      <div>
         <div>
-          <div class="company"><strong>기술 세미나 및 모의면접 스터디 주도</strong></div>
-          <span class="period">2025.04 ~</span>
+          <div class="company"><strong>기술 세미나 및 모의 면접 스터디 주도</strong></div>
+          <span class="period">2025.04 ~ 현재 진행 중</span>
         </div>
         <div>
-          <p><span class="role"><strong>매주 모의면접, 기술 세미나 운영을 통한 지식 공유 및 동료 성장 기여</strong></span></p>
+          <p>
+            <span class="role">
+              지식 공유 및 동료 성장을 위한 기술 세미나 및 모의 면접 스터디 (주 1회, 온라인 진행)
+            </span>
+          </p>
           <ul>
-            <li>모의면접을 통한 면접 스킬 연습 및 피드백 교환</li>
-            <li><a href="https://github.com/grapefruitgreentealoe/Modern-React-Deep-Dive" target="_blank">모던 리액트 Deep Dive 책 스터디</a> 진행</li>
-            <li><a href="https://tropical-quartz-3cb.notion.site/1d31311db2878020a34adc91ea5da66d?v=1d31311db2878042b6ef000c6d2958b5&source=copy_link"  target="_blank">기술 세미나 운영을 통한 <strong>기술적인 지식 공유</strong></a></li>
+            <li>모의 면접 운영: 매주 정기적인 모의 면접 진행과 피드백 교환을 통해 면접 스킬 향상에 기여했습니다.</li>
+            <li>기술 서적 스터디 주도: <a href="https://github.com/grapefruitgreentealoe/Modern-React-Deep-Dive" target="_blank">모던 리액트 Deep Dive</a> 서적 스터디를 주도하며 심도 깊은 기술 지식을 공유했습니다.</li>
+            <li>기술 세미나 운영: <a href="https://tropical-quartz-3cb.notion.site/1d31311db2878020a34adc91ea5da66d?v=1d31311db2878042b6ef000c6d2958b5&source=copy_link" target="_blank">정기적인 기술 세미나를 통해</a> 최신 기술 트렌드 및 지식 공유를 활성화했습니다.</li>
           </ul>
         </div>
       </div>
-      <div class="">
+      <div>
         <div>
           <div class="company"><strong>타입스크립트 사내 스터디 주도</strong></div>
-          <span class="period">2022.7 ~ 2022.09</span>
+          <span class="period">2022.07 ~ 2022.09 (3개월)</span>
         </div>
         <div>
-          <p><span class="role"><strong>타입스크립트 서적 스터디 및 발표를 통해 사내 개발 효율성 및 코드 안정성 강화에 기여</strong></span></p>
+          <p>
+            <span class="role">
+              타입스크립트 서적 스터디 및 발표 (사내 진행)
+            </span>
+          </p>
           <ul>
-            <li><a href="https://github.com/im-typescript"
-              target="_blank">github link</a></li>
+            <li>타입스크립트 서적 스터디를 주도하고 발표를 진행하며, 사내 개발 효율성 및 코드 안정성 강화에 기여했습니다.</li>
+            <li><a href="https://github.com/im-typescript" target="_blank">GitHub Repository</a></li>
+          </ul>
+        </div>
+      </div>
+      <div>
+        <div>
+          <div class="company"><strong>LeetCode 알고리즘 스터디 참여(5기)</strong></div>
+          <span class="period">2025.07 ~ 현재 진행 중</span>
+        </div>
+        <div>
+          <p>
+            <span class="role">
+              주요 활동 및 성과:
+            </span>
+          </p>
+          <ul>
+            <li>LeetCode 문제 해결 전략을 익히고, 효율적인 코드 작성법을 학습했습니다.</li>
+            <li>문제 풀이 시 여러 접근 방식을 탐구하며 시간 및 공간 복잡도를 개선하는 방법을 체득했습니다.</li>
+            <li>스터디원들의 PR(Pull Request)을 리뷰하며 코드 가독성, 효율성, 유지보수성을 검토하고, 건설적인 피드백을 주고받는 과정을 통해 소통 능력과 협업 역량을 길렀습니다.</li>
+          </ul>
+          <ul>
+            <li><a href="https://github.com/grapefruitgreentealoe/leetcode-study" target="_blank">GitHub Repository</a></li>
           </ul>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="detailed-skills">
+  <section id="detailed-skills" class="next-page">
     <h2><strong>기술적 능력</strong></h2>
     <div class="skills-grid">
         <div class="skill-item">
