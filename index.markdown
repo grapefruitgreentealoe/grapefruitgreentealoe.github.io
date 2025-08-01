@@ -136,25 +136,34 @@ permalink: /
         </div>
       </div>
       <div class="career-grid">
-        <div>
-          <div class="company"><strong>1인 창업 - DIY KITTEN</strong></div>
-          <span class="period">2024.07 ~ 2024.12</span>
-          <p>프론트엔드, 사업 기획, 프로젝트 매니징</p>
-          <p class="reason-for-leaving">이직 사유: 사업 확장성 및 팀 빌딩의 어려움으로 인한 재정비</p>
-          <p>
-            <a href="https://tropical-quartz-3cb.notion.site/DIY-KITTEN-1d91311db28780bebd1eca87c03adfb4" target="_blank">DIY KITTEN 포트폴리오</a>
-          </p>
-        </div>
-        <div>
-          <p><span class="role"><strong>사용자 커스터마이징 기반 수공예 서비스 런칭 및 운영 경험 (사용자 주도적 경험 설계)</strong></span></p>
-          <ul>
-            <li>모루인형 캔버스: React-Konva 기반 직관적인 디자인 커스터마이징 기능 구현</li>
-            <li>이미지 기반 비즈 디자인, 애니메이션 자동 생성기 + CSV 기반 도안화 기능 개발</li>
-            <li>CI/CD 파이프라인 구축 (GitHub Actions)</li>
-            <li>플리마켓 부스 운영을 통해 실제 사용자 100명과의 <strong>직접적인 피드백 교환 및 서비스 개선 경험</strong></li>
-          </ul>
-        </div>
-      </div>
+  <div>
+    <div class="company"><strong>1인 창업 - DIY KITTEN</strong></div>
+    <span class="period">2024.07 ~ 2024.12</span>
+    <p>프론트엔드 개발, 사업 기획, 프로젝트 매니징</p>
+    <p>구성원: 본인, 백엔드 1명</p>
+    <p class="reason-for-leaving">이직 사유: 사업 확장성 및 팀 빌딩의 어려움으로 인한 재정비</p>
+    <p>
+      <a href="https://tropical-quartz-3cb.notion.site/DIY-KITTEN-1d91311db28780bebd1eca87c03adfb4" target="_blank">DIY KITTEN 포트폴리오</a>
+    </p>
+  </div>
+  <div>
+    <p><span class="role"><strong>사용자 커스터마이징 기반 수공예 서비스 런칭 및 운영 (사용자 주도적 경험 설계)</strong></span></p>
+    <ul>
+      <li>모루인형 캔버스: React-Konva 기반의 직관적인 디자인 커스터마이징 기능 구현</li>
+      <li>자동화된 디자인 도구 개발: 이미지 기반 비즈 디자인 및 애니메이션 자동 생성기, CSV 기반 도안화 기능 개발</li>
+      <li>
+        클라우드 기반 CI/CD 파이프라인 구축 및 운영:
+        <ul>
+          <li>GitHub Actions와 AWS CodeDeploy를 연동하여 코드 변경 시 자동 빌드, 테스트, 배포가 이루어지는 CI/CD 워크플로우를 구축했습니다.</li>
+          <li>AWS EC2 인스턴스에 Nginx 리버스 프록시를 설정하여 프론트엔드 애플리케이션의 안정적인 서비스 환경을 마련했습니다.</li>
+          <li>AWS S3를 활용한 정적 파일 호스팅, IAM을 통한 접근 권한 관리, MySQL RDS 인스턴스 설정 등 AWS 클라우드 인프라를 직접 구성하고 관리한 경험이 있습니다.</li>
+          <li><a href="https://jamongjjang.tistory.com/314" target="_blank">관련 기술 블로그 (Nginx 리버스 프록시 및 AWS 배포)</a></li>
+        </ul>
+      </li>
+      <li>실제 사용자 피드백 반영: 플리마켓 부스 운영을 통해 약 100명의 사용자에게 직접적인 피드백을 수집하고 서비스 개선에 반영했습니다.</li>
+    </ul>
+  </div>
+</div>
     </div>
   </section>
 
