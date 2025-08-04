@@ -137,7 +137,7 @@ permalink: /
       </div>
       <div class="career-grid">
   <div>
-    <div class="company"><strong>1인 창업 - DIY KITTEN</strong></div>
+    <div class="company"><strong>창업 - DIY KITTEN</strong></div>
     <span class="period">2024.07 ~ 2024.12</span>
     <p>프론트엔드 개발, 사업 기획, 프로젝트 매니징</p>
     <p>구성원: 본인, 백엔드 1명</p>
