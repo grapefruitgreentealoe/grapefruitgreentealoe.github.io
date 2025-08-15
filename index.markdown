@@ -147,7 +147,7 @@ permalink: /
     </p>
   </div>
   <div>
-    <p><span class="role"><strong>사용자 커스터마이징 기반 수공예 서비스 런칭 및 운영 (사용자 주도적 경험 설계)</strong></span></p>
+    <p><span class="role"><strong>사용자 커스터마이징 기반 수공예 서비스 런칭 및 운영</strong></span></p>
     <ul>
       <li>모루인형 캔버스: React-Konva 기반의 직관적인 디자인 커스터마이징 기능 구현</li>
       <li>자동화된 디자인 도구 개발: 이미지 기반 비즈 디자인 및 애니메이션 자동 생성기, CSV 기반 도안화 기능 개발</li>
@@ -274,7 +274,8 @@ permalink: /
   <section id="additional-info">
     <h2><strong>기타 정보</strong></h2>
     <ul>
-      <li><strong>경력 공백기:</strong> 2024.03 ~ 2024.07 창업 준비 및 자기 계발</li>
+      <li><strong>창업 준비 및 자기 계발:</strong> 2024.03 ~ 2025.02</li>
+      <li><strong>취업 준비:</strong> 2024.02 ~ 2025.08</li>
     </ul>
   </section>
 
